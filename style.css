@@ -1,0 +1,581 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 25px 0 10px;
+}
+.logo{
+    font-size: 25px;
+    color: orangered;
+    cursor: pointer;
+    margin-right: auto;
+    padding-left: 10px;
+    
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(images/back.jpeg);
+    width: 85%;
+    
+    margin-bottom: 0;
+}
+.navlinks{
+    list-style: none;
+    cursor: pointer;
+}
+.navlinks li{
+    display: inline-block;
+    padding: 10px;
+}
+.navlinks li a{
+    text-decoration: none;
+    color: rgb(108, 87, 87);
+    font-weight: 400;
+    font-size: 20px;
+}
+.navlinks li a:hover{
+    color: orangered;
+}
+.btn{
+    padding: 9px 20px;
+    background-color: orangered;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(206, 68, 19);
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+span{
+    font-size: 20px;
+    margin-right: 15px;
+    color: rgb(108, 87, 87);
+    cursor: pointer;
+}
+span:hover{
+    color: orangered;
+}
+
+
+
+.section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social_media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5%;
+}
+.social_media ul{
+    padding-top: 100px;
+    padding-left: 140px;
+}
+.social_media li{
+    list-style: none;
+    padding: 10px;
+    align-items: center;  
+}
+.social_media li img{
+    width: 20px;
+    cursor: pointer;
+}
+.container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px 0 10%;
+    background: url(images/back.jpeg);
+}
+.content{
+    margin-right: 20px;
+    padding-right: 45px;
+    padding-left: 20px;
+}
+.content h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.content p{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 12px;
+}
+.image_bg{
+    width: 100%;
+    padding-left: 20px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.items ul{
+    display: flex;
+    list-style: none;
+    margin-left: 12%;
+}
+.items ul li img{
+    position: relative;
+    width: 300px;
+    border-radius: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+#first{
+    position: absolute;
+    top: 85%;
+    left: 16%;
+    color: #fff;
+    cursor: pointer;
+}
+#second{
+    position: absolute;
+    top: 85%;
+    left: 38%;
+    color: #fff;
+    cursor: pointer;
+}
+#third{
+    position: absolute;
+    top: 85%;
+    left: 59%;
+    color: #fff;
+    cursor: pointer;
+}
+#fourth{
+    position: absolute;
+    top: 85%;
+    left: 77%;
+    color: #fff;
+    cursor: pointer;
+}
+#first:hover{
+    color: orangered;
+}
+#second:hover{
+    color: orangered;
+}
+#third:hover{
+    color: orangered;
+}
+#fourth:hover{
+    color: orangered;
+}
+
+.slider{
+    margin-top: 40px;
+    margin-left: 10%;
+    max-width: 1200px;
+    width: 80%;
+}
+.slider #prev{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 70px;
+    top: 850px;
+}
+.slider #next{
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 850px;
+    right: 70px;
+}
+.slider-wrapper .image-list{
+    display: grid;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+    list-style: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .image-list .img-item{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+}
+.image-list li h1{
+    font-size: 20px;
+    align-items: center;
+    margin: 10px;
+    padding-left: 65px;
+    color: rgb(69, 63, 63);
+}
+.image-list li del{
+    padding-left: 65px;
+    color: rgb(69, 63, 63);
+}
+.image-list li h4{
+    padding-left: 65px;
+    padding-top: 2px;
+    color: orangered;
+    margin-bottom: 10px;
+}
+
+
+.wrapper{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-bottom: 15px;
+}
+.wrapper .minus{
+    padding: 10px 17px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0;
+    outline: 0;
+    background-color: gray;
+    border-radius: 45%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.wrapper span{
+    background-color: #fff;
+    border: 0.5px solid gray;
+    padding: 10px 50px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+.wrapper .plus{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0;
+    outline: 0;
+    background-color: gray;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 600px)
+{
+    .logo{
+        font-size: 10px;
+        padding-left: 3px;
+    }
+    .navlinks li{
+        padding-left: 5px;
+    }
+    .navlinks li a{
+        font-size: 10px;
+    }
+    .cart{
+        width: 20px;
+        height: 20px;
+    }
+    .btn{
+        padding: 3px 10px;
+        font-size: 8px;
+    }
+    span{
+        font-size: 10px;
+    }
+    
+    .social_media ul{
+        padding-top: 50px;
+        padding-left: 70px;
+    }
+    .social_media li{
+        padding: 5px;
+    }
+    .social_media ul li img{
+        width: 10px;
+    } 
+
+    .items ul{
+        margin-left: 6%;
+    }
+    .items ul li img{
+        width: 100px;
+        padding: 5px;
+    }
+    #first{
+        top: 49%;
+        left: 7.8%;
+        font-size: 10px;
+    }
+    #second{
+        top: 49%;
+        left: 27%;
+        font-size: 10px;
+    }
+    #third{
+        top: 49%;
+        left: 46%;
+        font-size: 10px;
+    }
+    #fourth{
+        top: 49%;
+        left: 60%;
+        font-size: 10px;
+    }
+
+    .slider{
+        margin-top: 20px;
+        max-width: 600px;
+    }
+    .slider #prev{
+        width: 20px;
+        left: 25px;
+        top: 70%;
+    }
+    .slider #next{
+        width: 20px;
+        right: 25px;
+        top: 70%;
+    }
+    .slider-wrapper .image-list{
+        gap: 10px;
+    }
+    .slider-wrapper .image-list .img-item{
+        width: 100px;
+        height: 100px;
+    }
+    .image-list li h1{
+        font-size: 12px;
+        margin: 5px;
+        padding-left: 25px;
+    }
+    .image-list li del{
+        padding-left: 25px;
+    }
+    .image-list li h4{
+        padding-left: 25px;
+    }
+
+    .wrapper{
+        padding-left: 5px;
+        padding-right: 40px;
+    }
+    .wrapper .minus{
+        padding: 3px 10px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .wrapper span{
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+    .wrapper .plus{
+        padding: 3px 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 999px){
+    .logo{
+        font-size: 12px;
+        padding-left: 4px;
+    }
+    .navlinks li{
+        padding-left: 6px;
+    }
+    .navlinks li a{
+        font-size: 13px;
+    }
+    .cart{
+        width: 24px;
+        height: 24px;
+    }
+    .btn{
+        padding: 5px 12px;
+        font-size: 10px;
+    }
+    span{
+        font-size: 12px;
+    }
+
+    .social_media ul{
+        padding-top: 60px;
+        padding-left: 80px;
+    }
+    .social_media li{
+        padding: 7px;
+    }
+    .social_media ul li img{
+        width: 18px;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+
+    .items ul{
+        margin-left: 8%;
+    }
+    .items ul li img{
+        width: 170px;
+        padding: 8px;
+    }
+    #first{
+        top: 50%;
+        left: 12%;
+        font-size: 14px;
+    }
+    #second{
+        top: 50%;
+        left: 35%;
+        font-size: 14px;
+    }
+    #third{
+        top: 50%;
+        left: 56%;
+        font-size: 14px;
+    }
+    #fourth{
+        top: 34%;
+        left: 75%;
+        font-size: 14px;
+    }
+
+    .slider{
+        margin-top: 20px;
+        max-width: 1000px;
+    }
+    .slider #prev{
+        width: 20px;
+        left: 50px;
+        top: 630px;
+    }
+    .slider #next{
+        width: 20px;
+        right: 50px;
+        top: 630px;
+    }
+    .slider-wrapper .image-list{
+        gap: 10px;
+    }
+    .slider-wrapper .image-list .img-item{
+        width: 140px;
+        height: 140px;
+    }
+    .image-list li h1{
+        font-size: 14px;
+        margin: 7px;
+        padding-left: 30px;
+    }
+    .image-list li del{
+        padding-left: 30px;
+    }
+    .image-list li h4{
+        padding-left: 30px;
+    }
+    .wrapper{
+        padding-left: 7px;
+        padding-right: 50px;
+    }
+    .wrapper .minus{
+        padding: 5px 13px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .wrapper span{
+        padding: 7px 20px;
+        font-size: 20px;
+    }
+    .wrapper .plus{
+        padding: 5px 13px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px){
+    .logo{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    .navlinks li{
+        padding-left: 7px;
+    }
+    .navlinks li a{
+        font-size: 15px;
+    }
+    .cart{
+        width: 27px;
+        height: 27px;
+    }
+    .btn{
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+    span{
+        font-size: 13px;
+    }
+
+    .social_media ul{
+        padding-top: 70px;
+        padding-left: 100px;
+    }
+    .social_media ul li img{
+        width: 25px;
+    }
+
+    .items ul{
+        margin-left: 10%;
+    }
+    .items ul li img{
+        width: 230px;
+        padding: 8px;
+    }
+    #first{
+        top: 52%;
+        left: 13%;
+        font-size: 18px;
+    }
+    #second{
+        top: 52%;
+        left: 33%;
+        font-size: 18px;
+    }
+    #third{
+        top: 52%;
+        left: 53%;
+        font-size: 18px;
+    }
+    #fourth{
+        top: 52%;
+        left: 69%;
+        font-size: 18px;
+    }
+
+    .slider-wrapper .image-list{
+        gap: 40px;
+    }
+
+    .wrapper span{
+        font-size: 15px;
+    }
+}
