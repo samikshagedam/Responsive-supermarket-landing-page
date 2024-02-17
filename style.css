@@ -442,23 +442,23 @@ span:hover{
         padding: 8px;
     }
     #first{
-        top: 50%;
+        top: 45%;
         left: 12%;
         font-size: 14px;
     }
     #second{
-        top: 50%;
-        left: 35%;
+        top: 45%;
+        left: 32%;
         font-size: 14px;
     }
     #third{
-        top: 50%;
-        left: 56%;
+        top: 45%;
+        left: 51%;
         font-size: 14px;
     }
     #fourth{
-        top: 34%;
-        left: 75%;
+        top: 45%;
+        left: 65%;
         font-size: 14px;
     }
 
