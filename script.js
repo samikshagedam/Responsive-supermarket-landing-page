@@ -1,3 +1,6 @@
+
+//javascript for slider 
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider .slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider .slider-wrapper .slide-button");
@@ -16,7 +19,7 @@ window.addEventListener("load", initSlider);
 
 //javascript for incrementing and decrementing the number of items
 
-const plus = document.querySelector(".plus"),
+let plus = document.querySelector(".plus"),
  minus = document.querySelector(".minus"),
  num = document.querySelector(".num");
 
